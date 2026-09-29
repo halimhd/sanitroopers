@@ -37,6 +37,7 @@ const trashItems = [
   { emoji: "🧴", name: "Botol plastik", type: "inorganic" },
   { emoji: "🥫", name: "Kaleng minuman", type: "inorganic" },
   { emoji: "🛍️", name: "Kantong plastik", type: "inorganic" },
+  { emoji: "🧻", name: "tissu bekas", type: "inorganic" },
   { emoji: "📦", name: "Kemasan kardus", type: "inorganic" }
 ];
 
