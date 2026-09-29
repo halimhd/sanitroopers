@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Website edukasi pemilahan sampah organik dan anorganik untuk anak-anak. Belajar, bermain, dan memilah sampah dengan benar.">
+  <title>Petualangan Pilah Sampah 🌱</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#beranda" aria-label="Petualangan Pilah Sampah">
+        <span class="brand-icon">♻️</span>
+        <span>
+          <strong>Petualangan Pilah Sampah</strong>
+          <small>Belajar • Bermain • Peduli Bumi</small>
+        </span>
+      </a>
+      <button class="menu-toggle" aria-label="Buka menu">☰</button>
+      <nav class="nav">
+        <a href="#belajar">Belajar</a>
+        <a href="#permainan">Game</a>
+        <a href="#kuis">Kuis</a>
+        <a href="#poster">Poster</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="beranda" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow">🌎 Misi kecil untuk bumi yang lebih bersih</span>
+          <h1>Yuk, Jadi <span>Pahlawan Sampah!</span></h1>
+          <p>
+            Kenali perbedaan sampah <b>organik</b> dan <b>anorganik</b>,
+            lalu buktikan kemampuanmu lewat game memilah sampah.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#permainan">🎮 Main Sekarang</a>
+            <a class="btn btn-light" href="#belajar">📚 Aku Mau Belajar</a>
+          </div>
+          <div class="mini-facts">
+            <div><b>🟢 Organik</b><span>Sisa makanan & daun</span></div>
+            <div><b>🔵 Anorganik</b><span>Botol, kaleng & plastik</span></div>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <div class="sun">☀️</div>
+          <div class="cloud cloud-1">☁️</div>
+          <div class="cloud cloud-2">☁️</div>
+          <div class="hill hill-back"></div>
+          <div class="hill hill-front"></div>
+          <div class="hero-character" aria-hidden="true">🧒</div>
+          <div class="bin bin-green">♻️<small>ORGANIK</small></div>
+          <div class="bin bin-blue">♻️<small>ANORGANIK</small></div>
+          <div class="floating-item item-1">🍌</div>
+          <div class="floating-item item-2">🍎</div>
+          <div class="floating-item item-3">🥤</div>
+          <div class="floating-item item-4">🧴</div>
+          <div class="hero-ground"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="belajar" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">📚 Kenali dulu</span>
+          <h2>Organik atau Anorganik?</h2>
+          <p>Ingat cara mudahnya: <b>yang mudah terurai</b> biasanya organik, sedangkan banyak bahan kemasan termasuk anorganik.</p>
+        </div>
+
+        <div class="category-grid">
+          <article class="category-card organic">
+            <div class="category-top">
+              <span class="big-icon">🥬</span>
+              <span class="tag">SI HIJAU</span>
+            </div>
+            <h3>Organik</h3>
+            <p>Sampah yang berasal dari makhluk hidup dan umumnya lebih mudah terurai secara alami.</p>
+            <div class="examples">
+              <span>🍌 Kulit pisang</span>
+              <span>🍎 Sisa buah</span>
+              <span>🍂 Daun</span>
+              <span>🍚 Sisa makanan</span>
+            </div>
+            <button class="listen-btn" data-speech="Organik. Contohnya kulit pisang, sisa buah, daun, dan sisa makanan.">🔊 Dengarkan</button>
+          </article>
+
+          <article class="category-card inorganic">
+            <div class="category-top">
+              <span class="big-icon">🧴</span>
+              <span class="tag">SI BIRU</span>
+            </div>
+            <h3>Anorganik</h3>
+            <p>Sampah seperti plastik, kaleng, botol, dan bahan lain yang tidak mudah terurai secara alami.</p>
+            <div class="examples">
+              <span>🧴 Botol plastik</span>
+              <span>🥫 Kaleng</span>
+              <span>🥤 Gelas plastik</span>
+              <span>🛍️ Kantong plastik</span>
+            </div>
+            <button class="listen-btn" data-speech="Anorganik. Contohnya botol plastik, kaleng, gelas plastik, dan kantong plastik.">🔊 Dengarkan</button>
+          </article>
+        </div>
+
+        <div class="memory-box">
+          <div class="memory-icon">💡</div>
+          <div>
+            <strong>Trik cepat mengingat:</strong>
+            <p>“Sisa makanan dan daun → <b>Hijau</b>. Botol, kaleng dan plastik → <b>Biru</b>.”</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="permainan" class="section game-section">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">🎮 Misi Pahlawan</span>
+          <h2>Game: Pilah Sampah!</h2>
+          <p>Klik sampah, lalu pilih tempat sampah yang benar. Kamu punya <b>45 detik</b> untuk menyelesaikan sebanyak mungkin.</p>
+        </div>
+
+        <div class="game-panel">
+          <div class="game-stats">
+            <div><span>⭐ Skor</span><strong id="score">0</strong></div>
+            <div><span>🔥 Streak</span><strong id="streak">0</strong></div>
+            <div><span>⏱️ Waktu</span><strong id="timer">45</strong></div>
+          </div>
+
+          <div class="game-progress"><span id="progress-bar"></span></div>
+
+          <div class="game-area">
+            <div class="mission">
+              <span class="mission-label">SAMPAH BERIKUTNYA</span>
+              <div id="trash-item" class="trash-item" tabindex="0">🍌</div>
+              <h3 id="trash-name">Kulit pisang</h3>
+              <p>Pilih tempat sampah yang tepat!</p>
+            </div>
+
+            <div class="bins">
+              <button class="game-bin green" data-bin="organic">
+                <span>🗑️</span>
+                <b>SI HIJAU</b>
+                <small>ORGANIK</small>
+              </button>
+              <button class="game-bin blue" data-bin="inorganic">
+                <span>🗑️</span>
+                <b>SI BIRU</b>
+                <small>ANORGANIK</small>
+              </button>
+            </div>
+          </div>
+
+          <div id="game-message" class="game-message" aria-live="polite">Ayo mulai! Kamu pasti bisa! 💪</div>
+
+          <button id="start-game" class="btn btn-primary start-btn">🚀 Mulai Game</button>
+          <button id="restart-game" class="btn btn-light start-btn hidden">🔄 Main Lagi</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="kuis" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">🧠 Tantangan kecil</span>
+          <h2>Kuis Cepat</h2>
+          <p>Jawab 3 pertanyaan. Tidak perlu takut salah—setiap jawaban akan diberi penjelasan.</p>
+        </div>
+
+        <div class="quiz-card" id="quiz-card">
+          <div class="quiz-progress"><span id="quiz-progress"></span></div>
+          <p class="question-number" id="question-number">Pertanyaan 1 dari 3</p>
+          <h3 id="question-text"></h3>
+          <div id="answers" class="answers"></div>
+          <div id="quiz-feedback" class="quiz-feedback"></div>
+          <button id="next-question" class="btn btn-primary hidden">Pertanyaan Berikutnya →</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="poster" class="section poster-section">
+      <div class="container poster-grid">
+        <div>
+          <span class="eyebrow">🖼️ Referensi visual</span>
+          <h2>Poster Pemilahan Sampah</h2>
+          <p>Poster yang kamu berikan bisa dipakai sebagai materi visual pendamping. File-nya juga disertakan di folder <code>assets</code>, sehingga bisa kamu ganti kapan saja di GitHub.</p>
+          <div class="tip-list">
+            <div>✅ Bisa diganti dengan poster buatanmu sendiri.</div>
+            <div>✅ Bisa ditambahkan QR code video edukasi.</div>
+            <div>✅ Bisa dikembangkan menjadi website sekolah/kampus.</div>
+          </div>
+        </div>
+        <figure class="poster-frame">
+          <img src="assets/poster-referensi.png" alt="Poster referensi pemilahan sampah organik dan anorganik">
+          <figcaption>Poster referensi yang diunggah pengguna.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <div class="container cta">
+        <div>
+          <span class="eyebrow">🌱 Mulai dari hal kecil</span>
+          <h2>“Jangan sampai tertukar!”</h2>
+          <p>Pilah sampah dengan benar hari ini untuk lingkungan yang lebih bersih besok.</p>
+        </div>
+        <a class="btn btn-dark" href="#permainan">🎮 Coba Game Lagi</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-wrap">
+      <div>
+        <strong>♻️ Petualangan Pilah Sampah</strong>
+        <p>Website edukasi sederhana yang bisa dikembangkan untuk pembelajaran anak.</p>
+      </div>
+      <span>© 2026 • Dibuat untuk belajar & bermain</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
